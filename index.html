@@ -184,6 +184,11 @@
   .plat-alt{color:var(--muted);font-size:13px}
   td.why{color:#57534e;font-size:13px}
 
+  /* 品类匹配表：首选平台、备选/补充两列不换行，「为什么」列自行折行 */
+  tbody td:nth-child(2),
+  tbody td:nth-child(3){white-space:nowrap}
+  tbody td:nth-child(4){white-space:normal;min-width:280px}
+
   .tips{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
   @media(max-width:820px){.tips{grid-template-columns:1fr}}
   .tip{
